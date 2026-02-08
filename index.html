@@ -3,55 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aftab Alam Qadri | Aftab.Ottoman</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <title>Aftab.Ottoman | Official Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #d4af37; --red: #bc1823; --black: #0a0a0a; --text: #e0e0e0; }
-        body { background-color: var(--black); color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; text-align: center; }
-        header { padding: 100px 20px; border-bottom: 2px solid var(--gold); background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&q=80'); background-size: cover; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); margin: 0; letter-spacing: 4px; }
-        .arabic { font-size: 2rem; color: var(--gold); margin: 20px 0; }
-        nav { margin-top: 20px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; border-bottom: 1px solid var(--red); padding-bottom: 5px; }
-        .section { padding: 80px 20px; max-width: 900px; margin: auto; }
-        .card { background: #1a1a1a; padding: 40px; border: 1px solid #333; margin-bottom: 20px; border-radius: 5px; }
-        .card h2 { color: var(--red); font-family: 'Playfair Display', serif; }
-        .btn { background-color: var(--gold); color: black; padding: 15px 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; border-radius: 3px; }
-        footer { padding: 50px; background: #050505; border-top: 1px solid var(--gold); color: var(--gold); }
+        :root { --gold: #d4af37; --red: #bc1823; --black: #0a0a0a; --dark-gray: #111; --text: #f0f0f0; }
+        
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { 
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                        url('https://images.unsplash.com/photo-1519817650390-64a934479f67?auto=format&fit=crop&q=80'); /* High-end dark architectural background */
+            background-size: cover; background-attachment: fixed;
+            color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; 
+        }
+
+        /* Navigation Bar */
+        nav { 
+            background: rgba(10, 10, 10, 0.95); padding: 20px; position: fixed; 
+            top: 0; width: 100%; z-index: 1000; border-bottom: 1px solid var(--gold);
+            display: flex; justify-content: center;
+        }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; transition: 0.3s; }
+        nav a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .shahada { font-size: 2.2rem; color: var(--gold); margin-bottom: 20px; letter-spacing: 5px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin: 0; color: #fff; letter-spacing: 8px; }
+        .tagline { font-size: 1.2rem; color: var(--gold); letter-spacing: 4px; margin-top: 10px; font-weight: 300; }
+
+        /* Content Sections */
+        .container { max-width: 1100px; margin: auto; padding: 100px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        
+        .card { 
+            background: rgba(20, 20, 20, 0.8); border: 1px solid #333; padding: 40px; 
+            border-radius: 10px; transition: 0.4s; backdrop-filter: blur(5px);
+        }
+        .card:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .card h2 { font-family: 'Playfair Display', serif; color: var(--gold); margin-top: 0; }
+        
+        .btn { 
+            display: inline-block; padding: 12px 25px; border: 1px solid var(--gold); 
+            color: var(--gold); text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s;
+        }
+        .btn:hover { background: var(--gold); color: black; }
+
+        footer { background: #050505; padding: 60px 20px; border-top: 1px solid var(--gold); text-align: center; }
+        .footer-quote { font-size: 1.5rem; color: var(--gold); margin-bottom: 10px; }
     </style>
 </head>
 <body>
-    <header>
-        <div class="arabic">لَا إِلَٰهَ إِلَّا ٱللَّهُ مُحَمَّدٌ رَّسُولُ ٱللَّهِ</div>
-        <h1>AFTAB.OTTOMAN</h1>
-        <p>Qadri | Polymath | Filmmaker | Educator</p>
-        <nav>
-            <a href="#docs">Films</a>
-            <a href="#courses">Academy</a>
-            <a href="#articles">Articles</a>
-        </nav>
-    </header>
 
-    <section class="section" id="docs">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="films.html">Films</a>
+    <a href="academy.html">Academy</a>
+    <a href="articles.html">Articles</a>
+</nav>
+
+<header>
+    <div class="shahada">لَا إِلَٰهَ إِلَّا ٱللَّهُ مُحَمَّدٌ رَّسُولُ ٱللَّهِ</div>
+    <h1>AFTAB.OTTOMAN</h1>
+    <div class="tagline">POLYMATH | ISLAMIST | FILMMAKER</div>
+    <a href="#about" class="btn">ENTER THE ARCHIVE</a>
+</header>
+
+<div class="container" id="about">
+    <div class="grid">
         <div class="card">
-            <h2>The Archives</h2>
-            <p>Investigative Documentaries & Historical Exposes. Documenting the Ummah upon the Prophetic Methodology.</p>
-            <a href="#" class="btn">WATCH THE ASSAM EXPOSE</a>
+            <h2>The Film Archive</h2>
+            <p>Documenting the Ummah. Exposing tyranny. Our lenses capture the truth the world ignores.</p>
+            <a href="films.html" class="btn">WATCH FILMS</a>
         </div>
-    </section>
-
-    <section class="section" id="courses">
         <div class="card">
             <h2>Ottoman Academy</h2>
-            <p>Professional Islamic Courses: History, Polymathy, and Spiritual Excellence (Ihsan).</p>
-            <a href="#" class="btn">ENROLL IN COURSES</a>
+            <p>Reviving Islamic Polymathy. Historical education and spiritual excellence for the next generation.</p>
+            <a href="academy.html" class="btn">ENROLL NOW</a>
         </div>
-    </section>
+        <div class="card">
+            <h2>Articles & Research</h2>
+            <p>Deep dives into Tasawwuf, Khilafah, and the intellectual legacy of the Ottoman world.</p>
+            <a href="articles.html" class="btn">READ ARTICLES</a>
+        </div>
+    </div>
+</div>
 
-    <footer>
-        <div class="arabic" style="font-size: 1.5rem;">ثم تكون خلافة على منهاج النبوة</div>
-        <p>لا غالب الا اللّٰہ 🏴</p>
-        <p>&copy; 2024 Aftab.Ottoman Archive. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <div class="footer-quote">ثم تكون خلافة على منهاج النبوة</div>
+    <p style="color: var(--gold); letter-spacing: 2px;">لا غالب الا اللّٰہ 🏴</p>
+    <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2024 Aftab.Ottoman | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
