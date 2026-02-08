@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftab Alam Qadri | Aftab.Ottoman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --red: #bc1823; --black: #0a0a0a; --text: #e0e0e0; }
+        body { background-color: var(--black); color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; text-align: center; }
+        header { padding: 100px 20px; border-bottom: 2px solid var(--gold); background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&q=80'); background-size: cover; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); margin: 0; letter-spacing: 4px; }
+        .arabic { font-size: 2rem; color: var(--gold); margin: 20px 0; }
+        nav { margin-top: 20px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; border-bottom: 1px solid var(--red); padding-bottom: 5px; }
+        .section { padding: 80px 20px; max-width: 900px; margin: auto; }
+        .card { background: #1a1a1a; padding: 40px; border: 1px solid #333; margin-bottom: 20px; border-radius: 5px; }
+        .card h2 { color: var(--red); font-family: 'Playfair Display', serif; }
+        .btn { background-color: var(--gold); color: black; padding: 15px 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; border-radius: 3px; }
+        footer { padding: 50px; background: #050505; border-top: 1px solid var(--gold); color: var(--gold); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="arabic">لَا إِلَٰهَ إِلَّا ٱللَّهُ مُحَمَّدٌ رَّسُولُ ٱللَّهِ</div>
+        <h1>AFTAB.OTTOMAN</h1>
+        <p>Qadri | Polymath | Filmmaker | Educator</p>
+        <nav>
+            <a href="#docs">Films</a>
+            <a href="#courses">Academy</a>
+            <a href="#articles">Articles</a>
+        </nav>
+    </header>
+
+    <section class="section" id="docs">
+        <div class="card">
+            <h2>The Archives</h2>
+            <p>Investigative Documentaries & Historical Exposes. Documenting the Ummah upon the Prophetic Methodology.</p>
+            <a href="#" class="btn">WATCH THE ASSAM EXPOSE</a>
+        </div>
+    </section>
+
+    <section class="section" id="courses">
+        <div class="card">
+            <h2>Ottoman Academy</h2>
+            <p>Professional Islamic Courses: History, Polymathy, and Spiritual Excellence (Ihsan).</p>
+            <a href="#" class="btn">ENROLL IN COURSES</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="arabic" style="font-size: 1.5rem;">ثم تكون خلافة على منهاج النبوة</div>
+        <p>لا غالب الا اللّٰہ 🏴</p>
+        <p>&copy; 2024 Aftab.Ottoman Archive. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
