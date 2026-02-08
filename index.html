@@ -11,7 +11,7 @@
             --red: #8b0000; 
             --black: #050505; 
             --text: #ffffff;
-            --grid-color: rgba(212, 175, 55, 0.05); /* Very subtle gold grid */
+            --grid-color: rgba(212, 175, 55, 0.05); 
         }
 
         * { box-sizing: border-box; scroll-behavior: smooth; }
@@ -19,17 +19,15 @@
         body { 
             margin: 0;
             background-color: var(--black);
-            /* THE "CROSS CHECK" PATTERN */
             background-image: 
                 linear-gradient(var(--grid-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-            background-size: 50px 50px; /* Adjust size for the "check" look */
+            background-size: 50px 50px;
             color: var(--text);
             font-family: 'Montserrat', sans-serif;
             overflow-x: hidden;
         }
 
-        /* Fixed Navigation */
         nav { 
             background: rgba(5, 5, 5, 0.95); 
             padding: 20px; 
@@ -42,7 +40,6 @@
         nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; transition: 0.3s; }
         nav a:hover { color: var(--gold); }
 
-        /* Hero Section */
         header { 
             height: 100vh; 
             display: flex; 
@@ -51,7 +48,7 @@
             align-items: center; 
             text-align: center;
             border-bottom: 1px solid var(--gold);
-            background: radial-gradient(circle, rgba(139, 0, 0, 0.15) 0%, transparent 70%); /* Crimson glow */
+            background: radial-gradient(circle, rgba(139, 0, 0, 0.15) 0%, transparent 70%);
         }
 
         .shahada { font-size: 2rem; color: var(--gold); margin-bottom: 20px; letter-spacing: 8px; opacity: 0.8; }
@@ -66,7 +63,6 @@
 
         .tagline { font-size: 1rem; color: var(--gold); letter-spacing: 6px; margin-top: 15px; font-weight: 300; text-transform: uppercase; }
 
-        /* Container & Cards */
         .container { max-width: 1200px; margin: auto; padding: 100px 20px; }
         
         .section-title {
@@ -84,14 +80,15 @@
             background: rgba(15, 15, 15, 0.9); 
             border: 1px solid rgba(212, 175, 55, 0.2); 
             padding: 50px 40px; 
-            border-radius: 0; /* Sharp edges for a traditional feel */
             transition: 0.5s;
             text-align: left;
             position: relative;
             overflow: hidden;
+            text-decoration: none;
+            color: var(--text);
+            display: block;
         }
 
-        /* The Gold "Corner" accents */
         .card::before {
             content: ""; position: absolute; top: 0; left: 0; width: 20px; height: 20px;
             border-top: 2px solid var(--gold); border-left: 2px solid var(--gold);
@@ -103,8 +100,7 @@
             box-shadow: 0 0 30px rgba(212, 175, 55, 0.1);
         }
 
-        .card h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 1.8rem; margin-top: 0; letter-spacing: 1px; }
-        .card p { font-size: 0.95rem; line-height: 1.8; color: #bbb; }
+        .card h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 1.8rem; margin-top: 0; }
         
         .btn { 
             display: inline-block; padding: 12px 30px; border: 1px solid var(--gold); 
@@ -126,9 +122,9 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="#films">Films</a>
-    <a href="#academy">Academy</a>
-    <a href="#articles">Articles</a>
+    <a href="films.html">Films</a>
+    <a href="academy.html">Academy</a>
+    <a href="articles.html">Articles</a>
 </nav>
 
 <header>
@@ -141,23 +137,34 @@
 <div class="container" id="about">
     <h2 class="section-title">The Three Pillars</h2>
     <div class="grid">
-        <div class="card" id="films">
+        <a href="films.html" class="card">
             <h2>The Film Archive</h2>
             <p>High-impact investigative journalism and historical exposes. Uncovering the narratives of the Ummah that the world refuses to acknowledge.</p>
-            <a href="#" class="btn">View Documentaries</a>
-        </div>
-        <div class="card" id="academy">
+            <span class="btn">View Documentaries</span>
+        </a>
+        <a href="academy.html" class="card">
             <h2>Ottoman Academy</h2>
             <p>Education for the visionary. We provide specialized courses in Islamic Polymathy, History, and spiritual excellence (Ihsan).</p>
-            <a href="#" class="btn">Enroll Now</a>
-        </div>
-        <div class="card" id="articles">
+            <span class="btn">Enroll Now</span>
+        </a>
+        <a href="articles.html" class="card">
             <h2>Articles & Research</h2>
             <p>Intellectual deep-dives into the legacy of the Caliphate, Ottoman diplomacy, and the revival of the Islamic world.</p>
-            <a href="#" class="btn">Read Research</a>
-        </div>
+            <span class="btn">Read Research</span>
+        </a>
     </div>
 </div>
+
+<section class="container" id="connect" style="padding-top: 0;">
+    <h2 class="section-title">Connect</h2>
+    <div style="text-align: center;">
+        <a href="https://instagram.com/aftab.ottoman" class="card" style="display: inline-block; width: 100%; max-width: 500px; text-align: center;">
+            <h2 style="margin:0;">Instagram</h2>
+            <p>@aftab.ottoman</p>
+            <span style="color: var(--gold); font-weight: bold; letter-spacing: 2px;">FOLLOW THE ARCHIVE →</span>
+        </a>
+    </div>
+</section>
 
 <footer>
     <div class="footer-quote">ثم تكون خلافة على منهاج النبوة</div>
