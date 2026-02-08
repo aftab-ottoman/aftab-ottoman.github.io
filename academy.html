@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy | Aftab.Ottoman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --red: #8b0000; --black: #050505; --text: #ffffff; --grid-color: rgba(212, 175, 55, 0.05); }
+        body { margin: 0; background-color: var(--black); background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px); background-size: 50px 50px; color: var(--text); font-family: 'Montserrat', sans-serif; }
+        nav { background: rgba(5, 5, 5, 0.95); padding: 20px; position: fixed; top: 0; width: 100%; z-index: 1000; border-bottom: 1px solid var(--gold); display: flex; justify-content: center; backdrop-filter: blur(10px); }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; transition: 0.3s; }
+        .container { max-width: 1000px; margin: auto; padding: 120px 20px; }
+        h1 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 3rem; text-align: center; margin-bottom: 50px; }
+        .course-card { background: rgba(15, 15, 15, 0.9); border: 1px solid rgba(212, 175, 55, 0.2); padding: 50px; margin-bottom: 30px; position: relative; }
+        .course-card::before { content: ""; position: absolute; top: 0; left: 0; width: 20px; height: 20px; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+        h2 { font-family: 'Playfair Display', serif; color: var(--gold); }
+        .btn { display: inline-block; padding: 12px 30px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-weight: 600; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: var(--gold); color: #000; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="academy.html">Academy</a>
+        <a href="articles.html">Articles</a>
+    </nav>
+    <div class="container">
+        <h1>Ottoman Academy</h1>
+        <div class="course-card">
+            <h2>Islamic Polymathy 101</h2>
+            <p>Training the next generation of visionary thinkers. Master history, philosophy, and the Prophetic methodology.</p>
+            <a href="https://instagram.com/aftab.ottoman" class="btn">Inquire for Enrollment</a>
+        </div>
+        <div class="course-card">
+            <h2>Brand Collaborations</h2>
+            <p>Professional partnerships with ethical Islamic brands. Build with the archive.</p>
+            <a href="https://instagram.com/aftab.ottoman" class="btn">Partner with us</a>
+        </div>
+    </div>
+</body>
+</html>
